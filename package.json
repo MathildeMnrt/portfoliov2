@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-email/components": "^0.0.11",
+    "@react-email/render": "^0.0.9",
+    "@react-email/tailwind": "0.0.13-canary.1",
     "@heroicons/react": "^2.0.18",
     "autoprefixer": "10.4.15",
     "eslint": "8.47.0",
@@ -16,12 +19,11 @@
     "framer-motion": "^10.16.1",
     "next": "^14.2.3",
     "postcss": "8.4.27",
-    "react": "^18.3.1",
+    "react": "18.2.0",
     "react-animated-numbers": "^0.16.0",
     "react-dom": "^18.3.1",
     "react-type-animation": "^3.1.0",
-    "resend": "^1.0.0",
     "tailwindcss": "3.3.3",
-    "@react-email/render": "0.0.9-canary.2"
+    "resend": "2.1.0-canary.1"
   }
 }
