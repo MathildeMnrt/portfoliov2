@@ -4,7 +4,88 @@ import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
-const projectsData = [
+const projectsData
+  = [
+  {
+      id: 7,
+      type: 'demo',
+      title: "Share AI generated images",
+      description: "A short and sweet project that uses the power of DallE AI to generate custom images and share them with the community.",
+      image: "/images/projects/dalle-clone-demo.png",
+      previewUrl: "https://dalle-clone-demo.mathildemenoret.com/",
+      gitUrl: "https://github.com/CodeBeroi/project-threejs-ai",
+      tech: ["Node.js", "Express", "React", "MongoDB", "DallE"],
+      tag: ["All", "Web"]
+  },
+  {
+      id: 1,
+      type: 'demo',
+      title: "Share AI generated images",
+      description: "A short and sweet project that uses the power of DallE AI to generate custom images and share them with the community.",
+      image: "/images/projects/dalle-clone-demo.png",
+      previewUrl: "https://dalle-clone-demo.mathildemenoret.com/create-post",
+      gitUrl: "https://github.com/CodeBeroi/project-threejs-ai",
+      tech: ["Node.js", "Express", "React", "MongoDB", "DallE"],
+      tag: ["All", "Web"]
+  },
+  {
+      id: 2,
+      type: 'demo',
+      title: "Threads Clone",
+      description: "Find the design and main features of the famous app Threads.",
+      image: "/images/projects/threads-clone.png",
+      previewUrl: "https://threads-clone-7a65.vercel.app/create-thread/",
+      gitUrl: "https://github.com/MathildeMnrt/threads_clone",
+      tech: ["Next.js", "React", "MongoDB", "Clerk"],
+      tag: ["All", "Web"]
+  },
+  {
+      id: 3,
+      type: 'demo',
+      title: "ThreeJS / DallE Demo",
+      description: "Little project to learn ThreeJS while using DallE generated content",
+      image: "/images/projects/threejs-ai-shirt.png",
+      previewUrl: "ai-threejs-demo.mathildemenoret.com",
+      gitUrl: "https://github.com/CodeBeroi/project-threejs-ai",
+      tech: ["Node.js", "Express", "React", "Threejs", "DallE", "Framer Motion"],
+      tag: ["All", "Web"]
+  },
+  {
+      id: 4,
+      type: 'demo',
+      title: "AI Summarizer",
+      description: "A simple page that summarizes the content of an URL using OpenAI.",
+      image: "/images/projectsai-summarizer.png",
+      previewUrl: "https://ai-summarizer.mathildemenoret.com/",
+      gitUrl: "https://github.com/MathildeMnrt/ai-summarizer",
+      tech: ["React", "Redux", "RapidAPI"],
+      tag: ["All", "Web"]
+  },
+  {
+      id: 5,
+      type: 'content',
+      title: "Back-end overhaul",
+      description: "Migrating an existing NoSQL database to a relational model using TypeORM and PostgreSQL. API creation and documentation to be used by an existing front",
+      image: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      previewUrl: "https://lama.dev",
+      gitUrl: "/",
+      tech: ["TypeORM", "Nest.js", "PostgreSQL"],
+      tag: ["All", "Web"]
+  },
+  {
+      id: 6,
+      type: 'content',
+      title: "My portfolio",
+      description: "Just linking this here so you can check how I built this portfolio!",
+      image: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      gitUrl: "https://github.com/CodeBeroi/portfolio",
+      previewUrl: "/",
+      tech: ["Next.js", "React", "Framer Motion", "EmailJS"],
+      tag: ["All", "Web"]
+  },
+];
+
+const projectsData1 = [
   {
     id: 1,
     title: "React Portfolio Website",
@@ -117,6 +198,7 @@ const ProjectsSection = () => {
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
+              tech={project.tech}
             />
           </motion.li>
         ))}
