@@ -52,7 +52,7 @@ const TAB_DATA = [
     content: (
       <>
         <ul className="list-disc pl-2">
-          <li>Fullstack Academy of Code</li>
+          <li>Diplôme d'Ingénieur en Cognitique - Ecole Nationale Supérieure de Cognitique (ENSC) - 2016 </li>
         </ul>
       </>
     ),
@@ -134,7 +134,7 @@ const TAB_DATA = [
                   <li>Regularly updating the product backlog</li>
                   <li>Facilitating effective communication with development teams and stakeholders</li>
                   <li>Validating developed features for specification compliance</li>
-                  <li>Planning and overseeing development iterations (sprints)</li>
+                  <li>Planning and overseeing development iterations (sprints / cycles)</li>
                   <li>Continually adjusting the strategy based on user feedback and changing priorities</li>
                 </ul>
               </div>
@@ -157,10 +157,10 @@ const TAB_DATA = [
               {/* JOB DESC */}
               <div className='mt-3'>
                 <ul className="list-disc pl-2 text-sm font-extralight">
-                  <li>Developing user-centric interfaces, ,, and creatively solving human-machine interaction challenges.</li>
-                  <li>crafting visual prototypes for rapid testing and iteration</li>
-                  <li>collaborating effectively with development, marketing, and project management teams</li>
-                  <li> conducting usability tests</li>
+                  <li>Developing user-centric interfaces and creatively solving human-machine interaction challenges.</li>
+                  <li>Crafting visual prototypes for rapid testing and iteration</li>
+                  <li>Collaborating effectively with developmen team</li>
+                  <li>Conducting usability tests</li>
                 </ul>
               </div>
               {/* DATES */}
@@ -204,19 +204,27 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} />
+        <Image src="/images/about-image.png" width={500} height={500} className="flex align-start" />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <div className="text-base lg:text-lg">
+          <div className="text-base lg:text-lg text-justify flex flex-col gap-3">
             <p>
-              After devoting 7 years to the success of a startup, I am now set on a new path—becoming a full-stack web developer. The allure of the dynamic digital landscape has prompted this transition, and I am actively seeking opportunities to immerse myself in the world of web development.
+              From Product Vision to Code: Expanding My Skillset in Web Development
+            </p>
+            <p>
+              Leveraging 7 years of rewarding experience as a Product Manager in B2B tech startup, I'm excited to engage a shift in my career path towards full-stack web development. The ever-evolving nature of the digital world has piqued my interest in the technical side, particularly the intricate processes behind web development. This shift allows me to delve deeper into the creation process and contribute to building innovative solutions.
+            </p>
+            <p>
+              My background in product management has instilled in me a strong foundation in user experience (UX) principles, which are invaluable for crafting high-quality web experiences.  Committed to continuous learning, I'm actively expanding my skillset by acquiring front-end development frameworks like React and back-end development skills such as Node.js.
+            </p>
+            <p>
+              This combined expertise will allow me to contribute to the development of impactful digital solutions that excel in both functionality and user experience.
             </p>
 
-            <p>
-              Driven by a passion for technology, I am committed to acquiring comprehensive skills in both front-end and back-end development through dedicated training. My vision is to seamlessly blend creativity with technical proficiency to craft visually compelling and innovative digital solutions.
+            <p className="pt-3">
+              With a passion for technology, I am committed to mastering both front-end and back-end development through rigorous training. My goal is to blend creativity with technical expertise to craft engaging and innovative digital solutions.
             </p>
-
-            <p>This shift represents more than a professional pivot; its a personal commitment to aligning my career with my passions. I look forward to leveraging my entrepreneurial background alongside newfound technical expertise to create impactful digital experiences. In essence, my journey into full-stack web development is a quest to transform my creativity and organizational skills into tangible and unique contributions to the evolving web landscape.
+            <p className="pt-3">This career change represents a personal commitment to align my work with my passions. I look forward to combining my existing experience with my new technical skills to create impactful digital experiences and contribute to the evolving web landscape.
             </p>
           </div>
           {isPending ? <div>Loading...</div> :

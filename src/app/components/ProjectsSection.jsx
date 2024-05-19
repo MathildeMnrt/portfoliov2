@@ -6,40 +6,52 @@ import { motion, useInView } from "framer-motion";
 
 const projectsData
   = [
-  {
+    {
       id: 7,
       type: 'demo',
-      title: "Share AI generated images",
-      description: "A short and sweet project that uses the power of DallE AI to generate custom images and share them with the community.",
-      image: "/images/projects/dalle-clone-demo.png",
-      previewUrl: "https://dalle-clone-demo.mathildemenoret.com/",
-      gitUrl: "https://github.com/CodeBeroi/project-threejs-ai",
-      tech: ["Node.js", "Express", "React", "MongoDB", "DallE"],
-      tag: ["All", "Web"]
-  },
-  {
+      title: "Event Sharing App",
+      description: "My most massive project. NB: The project is still in development, but you can check the progress here. Repository is private but i would gladly present the content during interviews.",
+      image: "/images/projects/event-app.png",
+      previewUrl: "https://livit.vercel.app/",
+      gitUrl: "https://github.com/MathildeMnrt",
+      tech: ["Next.js", "React", "MongoDB", "Tailwind", "Stripe", "Clerk"],
+      tag: ["All", "Backend", "Web"],
+      detailUrl: "/projects/event-app"
+    },
+    {
       id: 1,
       type: 'demo',
       title: "Share AI generated images",
       description: "A short and sweet project that uses the power of DallE AI to generate custom images and share them with the community.",
       image: "/images/projects/dalle-clone-demo.png",
-      previewUrl: "https://dalle-clone-demo.mathildemenoret.com/create-post",
+      previewUrl: "https://dalle-clone-demo.mathildemenoret.com",
       gitUrl: "https://github.com/CodeBeroi/project-threejs-ai",
       tech: ["Node.js", "Express", "React", "MongoDB", "DallE"],
-      tag: ["All", "Web"]
-  },
-  {
+      tag: ["All", "Backend", "FrontEnd"]
+    },
+    {
+      id: 1,
+      type: 'demo',
+      title: "Dev Challenges",
+      description: "I tackled several little projects from DevChallenges.io to train myself to recreate front pages based on mock-up and specifications.",
+      image: "/images/projects/devchallenges.png",
+      previewUrl: "https://devchallenges.io/profile/e190dc92-dd2f-43ce-9222-c464e7be2a2e",
+      gitUrl: "https://github.com/MathildeMnrt",
+      tech: ["React", "Tailwind"],
+      tag: ["All", "FrontEnd"]
+    },
+    {
       id: 2,
       type: 'demo',
       title: "Threads Clone",
       description: "Find the design and main features of the famous app Threads.",
       image: "/images/projects/threads-clone.png",
-      previewUrl: "https://threads-clone-7a65.vercel.app/create-thread/",
+      previewUrl: "https://threads-clone-7a65.vercel.app",
       gitUrl: "https://github.com/MathildeMnrt/threads_clone",
       tech: ["Next.js", "React", "MongoDB", "Clerk"],
-      tag: ["All", "Web"]
-  },
-  {
+      tag: ["All", "Backend", "FrontEnd"]
+    },
+    {
       id: 3,
       type: 'demo',
       title: "ThreeJS / DallE Demo",
@@ -48,99 +60,43 @@ const projectsData
       previewUrl: "ai-threejs-demo.mathildemenoret.com",
       gitUrl: "https://github.com/CodeBeroi/project-threejs-ai",
       tech: ["Node.js", "Express", "React", "Threejs", "DallE", "Framer Motion"],
-      tag: ["All", "Web"]
-  },
-  {
+      tag: ["All", "Backend", "FrontEnd"]
+    },
+    {
       id: 4,
       type: 'demo',
       title: "AI Summarizer",
       description: "A simple page that summarizes the content of an URL using OpenAI.",
-      image: "/images/projectsai-summarizer.png",
+      image: "/images/projects/ai-summarizer.png",
       previewUrl: "https://ai-summarizer.mathildemenoret.com/",
       gitUrl: "https://github.com/MathildeMnrt/ai-summarizer",
       tech: ["React", "Redux", "RapidAPI"],
-      tag: ["All", "Web"]
-  },
-  {
+      tag: ["All", "Backend", "FrontEnd"]
+    },
+    {
       id: 5,
       type: 'content',
       title: "Back-end overhaul",
-      description: "Migrating an existing NoSQL database to a relational model using TypeORM and PostgreSQL. API creation and documentation to be used by an existing front",
-      image: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      previewUrl: "https://lama.dev",
+      description: "Migrating an existing NoSQL database to a relational model using TypeORM and PostgreSQL. API creation and documentation to be used by an existing front. NB: Repository is private as it was to help on an existing project but i would gladly present the content during interviews if requested.",
+      image: "/images/projects/nestjs-project.png",
+      previewUrl: "/",
       gitUrl: "/",
       tech: ["TypeORM", "Nest.js", "PostgreSQL"],
-      tag: ["All", "Web"]
-  },
-  {
+      tag: ["All", "Backend"]
+    },
+    {
       id: 6,
       type: 'content',
       title: "My portfolio",
       description: "Just linking this here so you can check how I built this portfolio!",
-      image: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      image: "/images/projects/portfolio.png",
       gitUrl: "https://github.com/CodeBeroi/portfolio",
       previewUrl: "/",
       tech: ["Next.js", "React", "Framer Motion", "EmailJS"],
-      tag: ["All", "Web"]
-  },
-];
+      tag: ["All", "FrontEnd"]
+    },
+  ];
 
-const projectsData1 = [
-  {
-    id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-];
 
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
@@ -165,6 +121,12 @@ const ProjectsSection = () => {
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
+      <div>
+        <p>
+          Browse through the projects to gain an understanding of my skills and approach to web development.
+          Most of these projects are based on tutorials or challenges that allowed me to progress quickly and learn about several tech, but I am currently working on a massive project that allowed me to acquire a great experience in NextJS by building my own web app.
+        </p>
+      </div>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
           onClick={handleTagChange}
@@ -199,6 +161,7 @@ const ProjectsSection = () => {
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
               tech={project.tech}
+              detailUrl={project.detailUrl}
             />
           </motion.li>
         ))}

@@ -2,7 +2,7 @@ import React from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, tech }) => {
+const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, tech, detailUrl }) => {
   return (
     <div>
       <div
@@ -35,6 +35,14 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, tech }) =
               </span>
             ))}
           </div>
+        )}
+        { detailUrl && (
+            <Link
+            href={detailUrl}
+            className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
+          >
+            Hire Me
+          </Link>
         )}
       </div>
     </div>
