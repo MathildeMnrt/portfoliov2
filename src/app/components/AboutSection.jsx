@@ -3,10 +3,20 @@ import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 
+import useTranslation from "next-translate/useTranslation";
+
+
+
+const AboutSection = () => {
+  const [tab, setTab] = useState("skills");
+  const [isPending, startTransition] = useTransition();
+
+  const { t } = useTranslation("common");
+
 
 const TAB_DATA = [
   {
-    title: "Skills",
+    title: t('common:about.skills.title'),
     id: "skills",
     content: (
       <>
@@ -45,6 +55,22 @@ const TAB_DATA = [
         </div>
       </>
     ),
+  },
+  {
+    title: "Soft Skills",
+    id: "soft-skills",
+    content: (
+      <>
+        <ul className="list-disc pl-2">
+          <li>{t('common:about.softSkills.id1')}</li>
+          <li>{t('common:about.softSkills.id2')}</li>
+          <li>{t('common:about.softSkills.id3')}</li>
+          <li>{t('common:about.softSkills.id4')}</li>
+          <li>{t('common:about.softSkills.id5')}</li>
+          <li>{t('common:about.softSkills.id6')}</li>
+        </ul>
+      </>
+    )
   },
   {
     title: "Education",
@@ -191,10 +217,6 @@ const TAB_DATA = [
   }
 ];
 
-const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
-  const [isPending, startTransition] = useTransition();
-
   const handleTabChange = (id) => {
     startTransition(() => {
       setTab(id);
@@ -203,28 +225,25 @@ const AboutSection = () => {
 
   return (
     <section className="text-white" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} className="flex align-start" />
+      <div className="lg:grid lg:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+        <Image src="/images/about-image.png" width={500} height={500} className="flex lg:align-start align-middle" />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-white mb-4 mt-4">{t("common:about.sectionTitle")}</h2>
           <div className="text-base lg:text-lg text-justify flex flex-col gap-3">
-            <p>
-              From Product Vision to Code: Expanding My Skillset in Web Development
+            <p className="font-bold">
+              {t('common:about.sectionDescription.title')}
             </p>
             <p>
-              Leveraging 7 years of rewarding experience as a Product Manager in B2B tech startup, I'm excited to engage a shift in my career path towards full-stack web development. The ever-evolving nature of the digital world has piqued my interest in the technical side, particularly the intricate processes behind web development. This shift allows me to delve deeper into the creation process and contribute to building innovative solutions.
+              {t('common:about.sectionDescription.p1')}
             </p>
             <p>
-              My background in product management has instilled in me a strong foundation in user experience (UX) principles, which are invaluable for crafting high-quality web experiences.  Committed to continuous learning, I'm actively expanding my skillset by acquiring front-end development frameworks like React and back-end development skills such as Node.js.
+              {t('common:about.sectionDescription.p2')}
             </p>
             <p>
-              This combined expertise will allow me to contribute to the development of impactful digital solutions that excel in both functionality and user experience.
+              {t('common:about.sectionDescription.p3')}
             </p>
-
-            <p className="pt-3">
-              With a passion for technology, I am committed to mastering both front-end and back-end development through rigorous training. My goal is to blend creativity with technical expertise to craft engaging and innovative digital solutions.
-            </p>
-            <p className="pt-3">This career change represents a personal commitment to align my work with my passions. I look forward to combining my existing experience with my new technical skills to create impactful digital experiences and contribute to the evolving web landscape.
+            <p>
+              {t('common:about.sectionDescription.p4')}
             </p>
           </div>
           {isPending ? <div>Loading...</div> :
@@ -235,7 +254,14 @@ const AboutSection = () => {
                   active={tab === "skills"}
                 >
                   {" "}
-                  Skills{" "}
+                  {t("common:about.skills.title")}{" "}
+                </TabButton>
+                <TabButton
+                  selectTab={() => handleTabChange("soft-skills")}
+                  active={tab === "soft-skills"}
+                >
+                  {" "}
+                  Soft skills{" "}
                 </TabButton>
                 <TabButton
                   selectTab={() => handleTabChange("experience")}

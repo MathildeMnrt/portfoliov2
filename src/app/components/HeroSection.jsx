@@ -4,8 +4,14 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import useTranslation from 'next-translate/useTranslation';
+
 
 const HeroSection = () => {
+  const { t, lang } = useTranslation('common')
+
+
+
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -17,18 +23,18 @@ const HeroSection = () => {
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              Hello, I&apos;m{" "}
+             {t('common:heroSection.title')}{" "}
             </span>
             <br></br>
             <TypeAnimation
               sequence={[
-                "Mathilde",
+                t('common:heroSection.subtext.id1'),
                 1000,
-                "Web Developer",
+                t('common:heroSection.subtext.id2'),
                 1000,
-                "Product Enthutiast",
+                t('common:heroSection.subtext.id3'),
                 1000,
-                "UX Designer",
+                t('common:heroSection.subtext.id4'),
                 1000,
               ]}
               wrapper="span"
@@ -36,27 +42,55 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <div className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            <p>👩‍🎓 Selft-taught fullstack developer</p>
-            <p>📊 7 years of expertise in Product for a B2B tech platform</p>
-            <p>🍷 Living in Bordeaux</p>
-            <p>🤝 Available for hire</p>
+          <div className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl flex flex-col gap-1.5">
+            <p>{t('bulletPoint1')}</p>
+            <p>{t('bulletPoint2')}</p>
+            <p>{t('bulletPoint3')}</p>
+            <p>{t('bulletPoint4')}</p>
+            {/*               <ul>
+                {Object.values(bulletPoints).map((point, index) => (
+                  <li key={index}>{point}</li>
+                ))}
+              </ul> */}
+
           </div>
           <div>
             <Link
               href="/#contact"
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
             >
-              Hire Me
+              {t('common:heroSection.buttons.hire')}
             </Link>
-            <Link
-              href="https://www.canva.com/design/DAF-QWc9l4M/Yzy8NzNpxFT0e3NAPdwo1A/edit?utm_content=DAF-QWc9l4M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+            {/*             <Link
+              href="https://www.canva.com/design/DAGFTESHf-s/Ei4F4AjUqv-Jh-34IUyF6Q/view?utm_content=DAGFTESHf-s&utm_campaign=designshare&utm_medium=link&utm_source=editor"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV
               </span>
-            </Link>
+            </Link> */}
+            <a
+              href="CV-MathildeMenoret-Fullstack-dev.pdf"
+              alt="Download CV"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
+            >
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                {t('common:heroSection.buttons.cv')}
+              </span>
+            </a>
+            <a
+              href="LettreMotivation-MathildeMenoret-DevFullstackJunior.pdf"
+              alt="Download Cover Letter"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mx-3 px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
+            >
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                {t('common:heroSection.buttons.motivation')}
+              </span>
+            </a>
           </div>
         </motion.div>
         <motion.div

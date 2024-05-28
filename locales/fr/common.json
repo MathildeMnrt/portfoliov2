@@ -1,0 +1,176 @@
+{
+    "navBar": {
+        "about":
+        {
+            "title": "A propos",
+            "path": "#about"
+        },
+        "projects":
+        {
+            "title": "Projets",
+            "path": "#projects"
+        },
+        "contact":
+        {
+            "title": "Contact",
+            "path": "#contact"
+        },
+        "home":
+        {
+            "title": "Retour au portfolio",
+            "path": "/"
+        }
+    },
+
+    "heroSection": {
+        "title": "Bienvenue! Je suis",
+        "subtext": {
+            "id1": "Mathilde",
+            "id2": "Développeuse Web",
+            "id3": "Experte en Produit",
+            "id4": "Passionnée d'UX"
+        },
+        "buttons": {
+            "hire": "Me recruter",
+            "cv": "Voir mon CV",
+            "motivation": "Pourquoi me choisir ?"
+        }
+    },
+
+    "bulletPoint1": "👩‍🎓 Développeuse fullstack auto-formée",
+    "bulletPoint2": "📊 7 ans d'expertise en Produit sur une plateforme tech B2B",
+    "bulletPoint3": "🍷 J'habite à Bordeaux",
+    "bulletPoint4": "📚 En recherche d'un poste de Développeuse Fullstack Junior",
+    "bulletPoint6": "🚀 Prête à réaliser de nouveaux défis",
+    "projects": {
+        "sectionTitle": "Mes Projets",
+        "intro": "Parcourez les projets pour comprendre mes compétences et mon approche du développement web. La plupart de ces projets sont basés sur des tutoriels ou des défis qui m'ont permis de progresser rapidement et d'apprendre plusieurs technologies. Cependant, je travaille actuellement sur un projet massif qui m'a permis d'acquérir une grande expérience en NextJS en construisant ma propre application web.",
+        "id7": {
+            "title": "Application de partage d'événements",
+            "description": "Mon plus gros projet. NB : Le projet est encore en développement, mais vous pouvez suivre les progrès ici. Le dépôt est privé, mais je serais ravie de le présenter lors d'entretiens."
+        },
+        "id1": {
+            "title": "Partager des images générées par IA",
+            "description": "Un projet court et agréable qui utilise la puissance de DallE AI pour générer des images personnalisées et les partager avec la communauté."
+        },
+        "id2": {
+            "title": "Clone de Threads",
+            "description": "Retrouvez le design et les principales fonctionnalités de la célèbre application Threads."
+        },
+        "id3": {
+            "title": "Démonstration ThreeJS / DallE",
+            "description": "Petit projet pour apprendre ThreeJS en utilisant le contenu généré par DallE."
+        },
+        "id4": {
+            "title": "Résumé par IA",
+            "description": "Une page simple qui résume le contenu d'une URL en utilisant OpenAI."
+        },
+        "id5": {
+            "title": "Refonte d'un back-end",
+            "description": "Migration d'une base de données NoSQL existante vers un modèle relationnel utilisant TypeORM et PostgreSQL. Création et documentation de l'API à utiliser par un front existant."
+        },
+        "id6": {
+            "title": "Mon portfolio",
+            "description": "Je le mets ici pour que vous puissiez voir comment j'ai construit ce portfolio !"
+        },
+        "id8": {
+            "title": "Défis de développement",
+            "description": "J'ai relevé plusieurs petits projets de DevChallenges.io pour m'entraîner à recréer des pages front à partir de maquettes et de spécifications."
+        }
+    },
+
+    "about":{
+        "sectionTitle": "A propos de moi",
+        "sectionDescription": { 
+            "title":"De la Vision Produit à l'Implémentation : Évoluer dans le Développement Web",
+            "p1": "Après sept années d'expérience en tant que Product Manager dans une startup tech B2B, j'ai choisi de me réorienter vers le développement web full-stack, un domaine qui me passionne depuis toujours. Cette transition me permet de mettre à profit mes compétences en gestion de projet, UX et communication pour concevoir et développer des solutions digitales performantes et innovantes.",
+            "p2":"Mon autoformation intensive en React et NextJS.js me permet de contribuer à la création de solutions répondant aux besoins de vos clients et aux exigences techniques de votre entreprise.",
+            "p3":"Mes projets autonomes démontrent ma capacité à mener à bien des projets complexes et à résoudre des problématiques variées, dans le respect des délais et des exigences.",
+            "p4":"Motivée et investie, je donne le meilleur de moi-même dans chaque mission. Passionnée par la technologie et le développement web, je suis déterminée à mettre mes compétences au service de votre entreprise et à les développer en suivant les évolutions du monde digital."
+    },
+        "skills": {
+            "title": "Compétences techniques",
+            "frontend": [
+                "React",
+                "NextJS",
+                "TailwindCSS",
+                "Figma"
+            ],
+            "backend": [
+                "NodeJS",
+                "Express",
+                "JavaScript",
+                "TypeScript",
+                "Prisma",
+                "TypeORM"
+            ],
+            "data": [
+                "Metabase",
+                "Grafana",
+                "MongoDB",
+                "PostgreSQL",
+                "ClickHouse"
+            ]
+        },
+        "softSkills": {
+            "title": "Soft skills",
+            "id1" : "Autonomie et capacité à mener des projets complexes",
+            "id2" : "Apprentissage continu et adaptabilité",
+            "id3" : "Rigueur et organisation",
+            "id4" : "Esprit d'équipe et collaboration",
+            "id5" : "Motivation et engagement",
+            "id6" : "Passion pour la technologie et l'innovation"
+        },
+        "experience": {
+            "title": "Experience",
+            "items": {
+                "productManager":
+                {
+                    "title": "Product Manager",
+                    "date": "2021 - 2023",
+                    "description": "I was in charge of the product for a B2B tech platform. I was responsible for the product roadmap, the product design, the product development and the product marketing.",
+                    "company": "DISPLAYCE"
+                },
+                "productOwner":
+                {
+                    "title": "Product Owner",
+                    "date": "2019 - 2021",
+                    "description": "I was in charge of the product for a B2B tech platform. I was responsible for the product roadmap, the product design, the product development and the product marketing.",
+                    "company": "DISPLAYCE"
+                },
+                "uxEngineer":
+                {
+                    "title": "UX Engineer",
+                    "date": "2016 - 2019",
+                    "description": "I was in charge of the product for a B2B tech platform. I was responsible for the product roadmap, the product design, the product development and the product marketing.",
+                    "company": "DISPLAYCE"
+                }
+            }
+        },
+        "education": {
+            "title": "Education",
+            "content": "Diplôme d'Ingénieur en Cognitique - Ecole Nationale Supérieure de Cognitique (ENSC) - 2016"
+        }
+    },
+
+
+    "contact": {
+        "sectionTitle": "Contact",
+        "sectionDescription": "Vous pouvez me contacter par e-mail ou sur les réseaux sociaux. Je suis ouverte à toute proposition de collaboration ou d'emploi.",
+        "fields": {
+            "email": {
+                "label": "Votre email",
+                "placeholder": "jacob@google.com"
+            },
+            "subject": {
+                "label": "Sujet",
+                "placeholder": "Juste pour dire bonjour !"
+            },
+            "message": {
+                "label": "Message",
+                "placeholder": "Parlons de ..."
+            },
+            "submit": "Envoyer"
+        }
+    }
+}

@@ -24,11 +24,21 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, tech, det
           </Link>
         </div>
       </div>
-      <div className="text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
+      <div className="text-white rounded-b-xl mt-3 bg-[#181818] py-6 px-4 flex flex-col w-full">
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
-        <p className="text-[#ADB7BE]">{description}</p>
+        <p className="text-[#ADB7BE] mb-3">{description}</p>
+        { detailUrl && (
+          <div className="flex w-full justify-end">
+            <Link
+            href={detailUrl}
+            className="px-4 py-2 sm:w-fit rounded-full mr-2 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
+          >
+            Learn More
+          </Link>
+          </div>
+        )}
         { tech && (
-          <div className="flex flex-row gap-2 mt-4">
+          <div className="flex flex-row gap-2 mt-4 flex-wrap">
             {tech.map((t, index) => (
               <span key={index} className="text-[#ADB7BE] bg-[#33353F] px-2 py-1 rounded-full text-xs">
                 {t}
@@ -36,14 +46,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, tech, det
             ))}
           </div>
         )}
-        { detailUrl && (
-            <Link
-            href={detailUrl}
-            className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
-          >
-            Hire Me
-          </Link>
-        )}
+
       </div>
     </div>
   );
