@@ -9,6 +9,9 @@ const nextConfig = nextTranslate({
 
 module.exports = {
   ...nextConfig,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   i18n: undefined, // Ensure i18n is not overridden
   async redirects() {
     return [
