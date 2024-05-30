@@ -70,7 +70,7 @@ const HeroSection = () => {
               </span>
             </Link> */}
             <a
-              href="CV-MathildeMenoret-Fullstack-dev.pdf"
+              href="CV-MathildeMenoret-FullstackDev.pdf"
               alt="Download CV"
               target="_blank"
               rel="noopener noreferrer"
