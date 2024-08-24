@@ -53,6 +53,7 @@ const HeroSection = () => {
                 ))}
               </ul> */}
 
+            <div className="py-3 text-white">{t('common:heroSection.subtext.id5')}</div>
           </div>
           <div>
             <Link
@@ -70,7 +71,7 @@ const HeroSection = () => {
               </span>
             </Link> */}
             <a
-              href="CV-MathildeMenoret-FullstackDev.pdf"
+              href="CV-MathildeMenoret-Product-FR-EN.pdf"
               alt="Download CV"
               target="_blank"
               rel="noopener noreferrer"
@@ -80,7 +81,7 @@ const HeroSection = () => {
                 {t('common:heroSection.buttons.cv')}
               </span>
             </a>
-            <a
+{/*             <a
               href="LettreMotivation-MathildeMenoret-DevFullstackJunior.pdf"
               alt="Download Cover Letter"
               target="_blank"
@@ -90,7 +91,7 @@ const HeroSection = () => {
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 {t('common:heroSection.buttons.motivation')}
               </span>
-            </a>
+            </a> */}
           </div>
         </motion.div>
         <motion.div

@@ -35,7 +35,6 @@ const TAB_DATA = [
             <ul className="list-disc pl-2">
               <li>Node.js</li>
               <li>Express</li>
-              <li>PostgreSQL</li>
               <li>JavaScript</li>
               <li>TypeScript</li>
             </ul>
@@ -78,7 +77,10 @@ const TAB_DATA = [
     content: (
       <>
         <ul className="list-disc pl-2">
-          <li>Diplôme d'Ingénieur en Cognitique - Ecole Nationale Supérieure de Cognitique (ENSC) - 2016 </li>
+          <li>{t('common:about.education.content.id1')}</li>
+        </ul>
+        <ul className="list-disc pl-2">
+          <li>{t('common:about.education.content.id2')}<a className="text-primary-500" href="https://www.sciencedirect.com/science/article/abs/pii/B9780128119266000695?via%3Dihub">{t('common:about.education.content.id3')}</a></li>
         </ul>
       </>
     ),

@@ -44,6 +44,10 @@ const Navbar = () => {
       path: "#projects",
     },
     {
+      title: `${t('common:navBar.notion.title')}`,
+      path: "https://mathildemeno.gumroad.com/",
+    },
+    {
       title: `${t('common:navBar.contact.title')}`,
       path: "#contact",
     },

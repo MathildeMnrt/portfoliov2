@@ -1,34 +1,34 @@
 {
     "navBar": {
-        "about":
-        {
+        "about": {
             "title": "A propos",
             "path": "#about"
         },
-        "projects":
-        {
+        "projects": {
             "title": "Projets",
             "path": "#projects"
         },
-        "contact":
-        {
+        "notion": {
+            "title": "Templates Notion",
+            "path": "https://mathildemeno.gumroad.com/"
+        },
+        "contact": {
             "title": "Contact",
             "path": "#contact"
         },
-        "home":
-        {
+        "home": {
             "title": "Retour au portfolio",
             "path": "/"
         }
     },
-
     "heroSection": {
         "title": "Bienvenue! Je suis",
         "subtext": {
             "id1": "Mathilde",
-            "id2": "Développeuse Web",
-            "id3": "Experte en Produit",
-            "id4": "Passionnée d'UX"
+            "id2": "Experte Produit",
+            "id3": "Passionnée de Tech & Data",
+            "id4": "Amatrice d'UX",
+            "id5": "Ce portfolio présente des projets personnels que j'ai réalisés pour approfondir mes connaissances en technologie, données et développement d'applications, tout en m'amusant à explorer de nouvelles idées."
         },
         "buttons": {
             "hire": "Me recruter",
@@ -36,11 +36,10 @@
             "motivation": "Pourquoi me choisir ?"
         }
     },
-
-    "bulletPoint1": "👩‍🎓 Développeuse fullstack auto-formée",
-    "bulletPoint2": "📊 7 ans d'expertise en Produit sur une plateforme tech B2B",
-    "bulletPoint3": "🍷 J'habite à Bordeaux",
-    "bulletPoint4": "📚 En recherche d'un poste de Développeuse Fullstack Junior",
+    "bulletPoint2": "📊 7 ans d'expertise en Product Management pour une plateforme technologique B2B",
+    "bulletPoint3": "👩‍🎓 Développeuse fullstack autodidacte par passion",
+    "bulletPoint4": "🍷 J'habite à Bordeaux",
+    "bulletPoint5": "🤝 En recherche d'un poste Product Owner / Product Manager",
     "bulletPoint6": "🚀 Prête à réaliser de nouveaux défis",
     "projects": {
         "sectionTitle": "Mes Projets",
@@ -78,16 +77,16 @@
             "description": "J'ai relevé plusieurs petits projets de DevChallenges.io pour m'entraîner à recréer des pages front à partir de maquettes et de spécifications."
         }
     },
-
-    "about":{
+    "about": {
         "sectionTitle": "A propos de moi",
-        "sectionDescription": { 
-            "title":"De la Vision Produit à l'Implémentation : Évoluer dans le Développement Web",
-            "p1": "Après sept années d'expérience en tant que Product Manager dans une startup tech B2B, j'ai choisi de me réorienter vers le développement web full-stack, un domaine qui me passionne depuis toujours. Cette transition me permet de mettre à profit mes compétences en gestion de projet, UX et communication pour concevoir et développer des solutions digitales performantes et innovantes.",
-            "p2":"Mon autoformation intensive en React et NextJS me permet de contribuer à la création de solutions répondant aux besoins de vos clients et aux exigences techniques de votre entreprise.",
-            "p3":"Mes projets autonomes démontrent ma capacité à mener à bien des projets complexes et à résoudre des problématiques variées, dans le respect des délais et des exigences.",
-            "p4":"Motivée et investie, je donne le meilleur de moi-même dans chaque mission. Passionnée par la technologie et le développement web, je suis déterminée à mettre mes compétences au service de votre entreprise et à les développer en suivant les évolutions du monde digital."
-    },
+        "sectionDescription": {
+            "title": "De la Vision Produit au Code : Relier la Gestion de Produit et le Développement Web",
+            "p1": "Forte de 7 ans d'expérience enrichissante en tant que Product Manager dans une startup tech B2B, je suis maintenant à la recherche d'un nouveau défi en tant que Product Owner ou Product Manager spécialisé dans la Tech/Data. Mon parcours en développement web full-stack a approfondi mon appréciation pour l'aspect technique de la création de produits numériques, me permettant de mieux comprendre les processus complexes qui stimulent l'innovation.",
+            "p2": "Mon expérience en gestion de produit m'a doté d'une solide base en principes d'expérience utilisateur (UX), que je souhaite exploiter pour concevoir des produits numériques de haute qualité. Alors que je continue à développer mes compétences techniques, notamment les frameworks front-end comme React et les technologies back-end telles que Node.js, je suis impatient de mettre cette expertise combinée au service d'un rôle en gestion de produit.",
+            "p3": "Ce mélange unique d'expérience en gestion de produit et de connaissances techniques me permet de contribuer au développement de solutions numériques impactantes, excellant à la fois en termes de fonctionnalité et d'expérience utilisateur.",
+            "p4": "Animée par une passion pour la technologie, je suis déterminée à maîtriser les aspects créatifs et techniques du développement de produits. Mon objectif est de combler le fossé entre la vision et l'exécution, en veillant à ce que les idées innovantes prennent vie de manière à résonner avec les utilisateurs.",
+            "p5": "Cette transition n'est pas seulement un changement de carrière, mais un choix stratégique visant à aligner mes compétences avec ma passion pour la gestion de produits axée sur la technologie et les données. Je suis enthousiaste à l'idée de combiner mon expertise en gestion de produit avec mes connaissances techniques grandissantes pour diriger le développement de produits numériques révolutionnaires et contribuer à une entreprise tournée vers l'avenir."
+        },
         "skills": {
             "title": "Compétences techniques",
             "frontend": [
@@ -113,33 +112,30 @@
             ]
         },
         "softSkills": {
-            "title": "Soft skills",
-            "id1" : "Autonomie et capacité à mener des projets complexes",
-            "id2" : "Apprentissage continu et adaptabilité",
-            "id3" : "Rigueur et organisation",
-            "id4" : "Esprit d'équipe et collaboration",
-            "id5" : "Motivation et engagement",
-            "id6" : "Passion pour la technologie et l'innovation"
+            "title": "Compétences Interpersonnelles",
+            "id1": "Leadership dans les Projets Complexes",
+            "id2": "Adaptabilité dans les Environnements Technologiques",
+            "id3": "Pensée Stratégique et Organisation",
+            "id4": "Collaboration Interfonctionnelle",
+            "id5": "Motivation et Orientation Résultats",
+            "id6": "Passion pour la Technologie et l'Innovation Data"
         },
         "experience": {
             "title": "Experience",
             "items": {
-                "productManager":
-                {
+                "productManager": {
                     "title": "Product Manager",
                     "date": "2021 - 2023",
                     "description": "I was in charge of the product for a B2B tech platform. I was responsible for the product roadmap, the product design, the product development and the product marketing.",
                     "company": "DISPLAYCE"
                 },
-                "productOwner":
-                {
+                "productOwner": {
                     "title": "Product Owner",
                     "date": "2019 - 2021",
                     "description": "I was in charge of the product for a B2B tech platform. I was responsible for the product roadmap, the product design, the product development and the product marketing.",
                     "company": "DISPLAYCE"
                 },
-                "uxEngineer":
-                {
+                "uxEngineer": {
                     "title": "UX Engineer",
                     "date": "2016 - 2019",
                     "description": "I was in charge of the product for a B2B tech platform. I was responsible for the product roadmap, the product design, the product development and the product marketing.",
@@ -149,14 +145,16 @@
         },
         "education": {
             "title": "Education",
-            "content": "Diplôme d'Ingénieur en Cognitique - Ecole Nationale Supérieure de Cognitique (ENSC) - 2016"
+            "content": {
+                "id1":"Diplôme d'Ingénieur en Cognitique - Ecole Nationale Supérieure de Cognitique (ENSC) - 2016",
+                "id2":"Co-auteur d'un article de recherche : ",
+                "id3":"Brain–Computer Interface : Analysis of Different Virtual Keyboards for Improving Usability"
+            }
         }
     },
-
-
     "contact": {
         "sectionTitle": "Contact",
-        "sectionDescription": "Vous pouvez me contacter par e-mail ou sur les réseaux sociaux. Je suis ouverte à toute proposition de collaboration ou d'emploi.",
+        "sectionDescription": "Vous pouvez me contacter par e-mail ou sur les réseaux sociaux",
         "fields": {
             "email": {
                 "label": "Votre email",
